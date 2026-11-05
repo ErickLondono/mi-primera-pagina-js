@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Isometra&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobreMi">About me</a></li>
+                <li><a href="#juego">Game</a></li>
+                <li><a href="#hobby">Hobbys</a></li>
+                <li><a href="#boton">Mensaje</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container container__info">
+            <h1 id="sobreMi">Erick Daniel Londoño Jaramillo</h1>
+            <p>Soy Erick, tengo 19 años. Actualmente estoy estudiando Análisis y Desarrollo de Software en el SENA. Vivo con mi padre y una madrastra. Me ubico en la Estrella por lo que siempre estoy algo retirado.<br>Me apasiona la programación desde que estaba en el colegio. Mi lenguaje favorito es Python, adoro también el deporte, juego tenis de mesa y futbol a nivel de hobby.</p>
+        </div>
+            <div class="container container__game">
+                <label for="numero" id="juego">Adivina el número: </label>
+            <input type="number" name="numero" id="numero" placeholder="Escribe un número (1-100)">
+            <p id="resultado"></p>
+        </div>
+
+        <div class="container container__hobbys">
+            <label for="tipoHobby" id="hobby">Mis hobbys:</label>
+            <select name="tipoHobby" id="tipoHobby">
+                <option value="">Elige una opción</option>
+                <option value="futbol">Fútbol</option>
+                <option value="tenis de mesa">Tenis de mesa</option>
+                <option value="programar">Programar</option>
+            </select>
+            <img src="imgs/paisaje.png" id="imagen">
+        </div>
+
+        <div class="container container__button">
+            <button id="boton">Click para ver mensaje</button>
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <h3>Datos de contacto</h3>
+            <li>Correo electronico: <a href="mailto:erickdo017@gmail.com">erickdo017@gmail.com</a></li>
+            <li>Celular: <a href="https://wa.me/573225649284" target="_blank">3225649284</a></li>
+        </ul>
+        <img src="imgs/logo-sena.png">
+    </footer>
+
+    <script src="../js/reto.js"></script>
+</body>
+</html>
